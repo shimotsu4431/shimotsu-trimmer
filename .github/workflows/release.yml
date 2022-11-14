@@ -37,6 +37,10 @@ jobs:
 
       # Publish to npm
       - name: publish-to-npm
+        run: |
+          npm run lint
+          npm run test
+          npm run build
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
