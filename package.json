@@ -11,6 +11,7 @@
     "lint:fix": "eslint --fix ./src/**/*.ts",
     "prebuild": "rimraf dist",
     "build": "rollup -c",
+    "prepare": "simple-git-hooks",
     "test": "jest"
   },
   "simple-git-hooks": {
