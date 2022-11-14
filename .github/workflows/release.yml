@@ -35,12 +35,16 @@ jobs:
           git_tag_prefix: ''
           version: ${{ env.CURRENT_PACKAGE_VERSION }}
 
+      # test
+      - name: test
+        run: npm run test
+
+      # build
+      - name: build
+        run: npm run build
+
       # Publish to npm
       - name: publish-to-npm
-        run: |
-          npm run lint
-          npm run test
-          npm run build
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
