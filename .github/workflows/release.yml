@@ -43,8 +43,13 @@ jobs:
       - name: build
         run: npm run build
 
-      # Publish to npm
-      - name: publish-to-npm
-        run: npm publish
+      # relase on npm
+      - name: relase on npm
+        run: |
+          npm ci
+          npm run lint
+          npm run test
+          npm run build
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
