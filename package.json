@@ -13,6 +13,9 @@
     "build": "rollup -c",
     "test": "jest"
   },
+  "simple-git-hooks": {
+    "pre-commit": "yarn test && yarn lint"
+  },
   "devDependencies": {
     "@jest/types": "^29.3.1",
     "@types/jest": "^29.2.2",
@@ -26,6 +29,7 @@
     "rollup": "^3.3.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
+    "simple-git-hooks": "^2.8.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.8.4"
   }
