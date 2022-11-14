@@ -2,9 +2,9 @@
   "type": "module",
   "name": "shimotsu-trimmer",
   "version": "1.0.3",
-  "main": "./dist/cjs/shimotsu-trimmer.cjs",
-  "module": "./dist/esm/shimotsu-trimmer.mjs",
-  "types": "./dist/cjs/index.d.ts",
+  "main": "dist/cjs/shimotsu-trimmer.cjs",
+  "module": "dist/esm/shimotsu-trimmer.mjs",
+  "types": "dist/cjs/index.d.ts",
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./src",
