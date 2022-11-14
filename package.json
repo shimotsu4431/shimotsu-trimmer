@@ -9,6 +9,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimotsu4431/shimotsu-trimmer.git"
+  },
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src/**/*.ts",
